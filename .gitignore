@@ -183,3 +183,72 @@ bower_components
 
 # Local development
 .local
+
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/.terraform.lock.hcl
+terraform/tfplan
+terraform/terraform.tfvars
+terraform/crash.log
+terraform/override.tf
+terraform/override.tf.json
+terraform/*_override.tf
+terraform/*_override.tf.json
+**/.terraform/
+
+# Ansible
+ansible/*.retry
+ansible/inventory.ini
+ansible/*.bak
+**/ansible/*.retry
+
+# SSH Keys
+*.key
+*.pem
+id_rsa
+id_rsa.pub
+*.ppk
+**/.ssh/
+
+# Monitoring data
+monitoring/grafana/data/
+monitoring/prometheus/data/
+**/grafana/data/
+**/prometheus/data/
+
+# Jenkins
+jenkins/secrets/
+jenkins/jobs/
+jenkins/workspace/
+jenkins/users/
+jenkins/logs/
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Deployment
+*.ps1
+*.sh
+deploy*.yml
+DEPLOYMENT*.md
+QUICKSTART*.md
+SETUP*.md
+START_HERE*.md
+
+# AWS
+*.zip
+*.tar.gz
+*.pem
+
+# Secrets
+secrets/
+*.secret
+.secrets
